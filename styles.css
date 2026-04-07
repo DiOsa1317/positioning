@@ -158,3 +158,54 @@
     justify-content: center;
     color: white;
 }
+
+.css-accordion {
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.css-accordion input {
+    display: none;
+}
+
+.css-accordion label {
+    display: block;
+    padding: 15px;
+    background: #f0f0f0;
+    cursor: pointer;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    transition: background 0.2s;
+}
+
+.css-accordion label:hover {
+    background: #e0e0e0;
+}
+
+.css-accordion .content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background: #fff;
+    padding: 0 15px;
+}
+
+.css-accordion .content p,
+.css-accordion .content ul {
+    margin: 15px 0;
+}
+
+.css-accordion .content ul {
+    padding-left: 20px;
+}
+
+.css-accordion input:checked + label + .content {
+    max-height: 300px;
+    padding: 15px;
+}
+
+.css-accordion input:checked + label {
+    background: #e8e8e8;
+}
+
