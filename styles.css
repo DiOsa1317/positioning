@@ -69,24 +69,25 @@
 .modal_window {
     display: none;
     position: fixed;
-    top: 0px;
-    left: 0px;
+    inset: 0;
     z-index: 999;
-    width: 100%;
-    height: 100%;
     background-color: rgba(140, 138, 173, 0.5);
     justify-content: center;
     align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .modal_content {
     background-color: rgb(192, 178, 226);
     width: 640px;
-    height: auto;
+    max-height: 90vh;
+    max-width: 100%;
+    overflow: auto;
     position: relative;
-    margin: 15% auto;
     padding: 20px;
     border-radius: 20px;
+    box-sizing: border-box;
 }
 
 .close_lightbox {
