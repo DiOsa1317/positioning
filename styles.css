@@ -4,8 +4,22 @@
     height: 100px;
     color: white;
     position: relative;
-    border: 1px solid black ;
+    border: 1px solid black;
+    margin-bottom: 15px;
+    box-sizing: border-box;
 }
+
+.red {
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    background-color: red;
+    border-radius: 50%;
+
+}
+
 .microsoft_logo {
     height: 100px;
     width: 100px;
@@ -13,6 +27,10 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 5px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 .red_square, .blue_square, .green_square, .yellow_square {
@@ -78,4 +96,64 @@
     cursor: pointer;
     font-size: 30px;
     font-weight: bold;
+}
+
+
+.container {
+    display: flex;
+    width: 200px;
+    height: 100px;
+    background-color: #e3e0e0;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-container {
+    --progress: 0%;
+    width: 100%;
+    position: relative;
+    height: 20px;
+    background-color: #9b9a9a;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: var(--progress);
+    height: 100%;
+    background-color: red;
+}
+
+.label {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    inset: 0;
+}
+
+.label-black {
+    color: black;
+}
+
+.label-white-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--progress);
+    height: 100%;
+    overflow: hidden;
+}
+
+.label-white {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
