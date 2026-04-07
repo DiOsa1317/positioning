@@ -6,6 +6,26 @@
     position: relative;
     border: 1px solid black ;
 }
+.microsoft_logo {
+    height: 100px;
+    width: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+}
+
+.red_square, .blue_square, .green_square, .yellow_square {
+    display: flex;
+}
+
+.red_square {
+    background-color: #F34F1C;
+}
+
+.green_square {
+    background-color: #7FBC00;
+}
 
 .red {
     width: 60%;
@@ -15,4 +35,11 @@
     left: 20%;
     background-color: red;
     border-radius: 50%;
+}
+.blue_square {
+    background-color: #01A6F0;
+}
+
+.yellow_square {
+    background-color: #FFBA01;
 }
